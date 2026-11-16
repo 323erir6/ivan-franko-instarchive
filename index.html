@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="uk" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fbfaf7" />
+  <meta name="description" content="Іван Франко у форматі сучасного Instagram-профілю. Інтерактивна історична реконструкція з творами, життєвими подіями та архівними фото." />
+  <title>Іван Франко (@ivan.franko) • Instarchive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Головне меню">
+      <a class="brand" href="#profile" aria-label="Instarchive — головна"><span class="brand-mark"><i data-icon="camera"></i></span><span class="brand-name">insta<span>archive</span><b>.</b></span></a>
+      <nav class="side-nav" aria-label="Навігація">
+        <button class="nav-link active" data-action="home"><i data-icon="house"></i><span>Головна</span></button>
+        <button class="nav-link" data-action="search"><i data-icon="search"></i><span>Пошук</span></button>
+        <button class="nav-link" data-action="explore"><i data-icon="compass"></i><span>Цікаве</span></button>
+        <button class="nav-link" data-action="reels"><i data-icon="clapperboard"></i><span>Історії</span></button>
+        <button class="nav-link" data-action="messages"><i data-icon="send"></i><span>Повідомлення</span></button>
+        <button class="nav-link" data-action="notifications"><i data-icon="heart"></i><span>Сповіщення</span><span class="nav-dot" aria-hidden="true"></span></button>
+        <button class="nav-link" data-action="create"><i data-icon="plus-square"></i><span>Створити</span></button>
+        <button class="nav-link current-user" data-action="home"><span class="nav-avatar"><img class="portrait-image" alt="Портрет Івана Франка" /></span><span>Профіль</span></button>
+      </nav>
+      <div class="side-spacer"></div>
+      <div class="sidebar-note"><div class="note-star">✳</div><div><strong>Історія оживає.</strong><p>Якби класики мали соцмережі.</p></div></div>
+      <button class="nav-link settings-btn" data-action="theme"><i data-icon="moon"></i><span>Змінити тему</span></button>
+      <div class="sidebar-footer">Освітній проєкт <span>·</span> 2026</div>
+    </aside>
+
+    <header class="mobile-header"><a class="mobile-brand" href="#profile">insta<span>archive</span><b>.</b></a><div><button class="icon-button" aria-label="Пошук" data-action="search"><i data-icon="search"></i></button><button class="icon-button" aria-label="Сповіщення" data-action="notifications"><i data-icon="heart"></i></button></div></header>
+
+    <main class="main" id="profile">
+      <div class="page-topline"><span>АРХІВ ВИДАТНИХ УКРАЇНЦІВ</span><span class="topline-right"><span class="topline-pin"></span> НАВЧАЛЬНА РЕКОНСТРУКЦІЯ</span></div>
+      <section class="profile" aria-label="Профіль Івана Франка">
+        <div class="profile-upper">
+          <div class="portrait-wrap"><button class="portrait-ring" id="avatar-story" aria-label="Переглянути історію профілю"><span class="portrait-inner"><img class="portrait-image" alt="Іван Франко, архівний портрет" /><span class="portrait-fallback">ІФ</span></span></button><span class="portrait-badge">1856—1916</span></div>
+          <div class="profile-info">
+            <div class="profile-firstrow"><h1>ivan.franko</h1><span class="verified" title="Історична постать" aria-label="Історична постать"><i data-icon="badge-check"></i></span><span class="profile-label">Письменник / мислитель</span><div class="profile-actions"><button class="follow-btn" id="follow-btn"><i data-icon="user-plus"></i><span id="follow-text">Стежити</span></button><button class="message-btn" data-action="messages">Повідомлення</button><button class="more-btn" data-action="more" aria-label="Більше про профіль"><i data-icon="ellipsis"></i></button></div></div>
+            <div class="stats" aria-label="Статистика профілю"><div><strong id="post-count">12</strong><span> дописів</span></div><div><strong id="followers-count">18,6 тис.</strong><span> читачів</span></div><div><strong>24</strong><span> стежить</span></div></div>
+            <div class="bio"><h2>Іван Якович Франко <span class="bio-symbol">✳</span></h2><p>Письменник, поет, перекладач, громадський діяч.<br/>Пишу про свободу, гідність і силу слова.<br/><span class="bio-location"><i data-icon="map-pin"></i> Нагуєвичі → Львів</span></p><a href="https://dimfranka.lviv.ua/franko" target="_blank" rel="noopener noreferrer" class="bio-link"><i data-icon="link-2"></i> dimfranka.lviv.ua/franko</a></div>
+            <div class="bio-quote">«Лиш боротись — значить жить.» <span>· із поезії «Vivere memento!»</span></div>
+          </div>
+        </div>
+
+        <div class="highlights" aria-label="Збережені історії"><button class="highlight" data-story="0"><span class="highlight-ring"><span class="highlight-core warm"><i data-icon="feather"></i></span></span><span>Про мене</span></button><button class="highlight" data-story="1"><span class="highlight-ring"><span class="highlight-core amber"><i data-icon="book-open"></i></span></span><span>Мої твори</span></button><button class="highlight" data-story="2"><span class="highlight-ring"><span class="highlight-core olive"><i data-icon="landmark"></i></span></span><span>Львів</span></button><button class="highlight" data-story="3"><span class="highlight-ring"><span class="highlight-core coral"><i data-icon="heart"></i></span></span><span>Родина</span></button><button class="highlight" data-story="4"><span class="highlight-ring"><span class="highlight-core slate"><i data-icon="hourglass"></i></span></span><span>Мій шлях</span></button><button class="highlight" data-story="5"><span class="highlight-ring"><span class="highlight-core lavender"><i data-icon="quote"></i></span></span><span>Цитати</span></button></div>
+      </section>
+
+      <section class="editorial-strip" aria-label="Про проєкт"><span class="strip-icon">✹</span><div><strong>Література. Але у твоїй стрічці.</strong><p>12 моментів із життя Каменяра — так, ніби він вів Instagram.</p></div><button id="learn-more" aria-label="Дізнатися більше про проєкт"><i data-icon="arrow-up-right"></i></button></section>
+
+      <section class="posts-section" aria-label="Дописи профілю"><div class="post-tabs" role="tablist" aria-label="Категорії дописів"><button role="tab" class="post-tab active" aria-selected="true" data-tab="posts"><i data-icon="grid-3x3"></i> ДОПИСИ</button><button role="tab" class="post-tab" aria-selected="false" data-tab="saved"><i data-icon="bookmark"></i> ЗБЕРЕЖЕНЕ</button><button role="tab" class="post-tab" aria-selected="false" data-tab="about"><i data-icon="book-open"></i> БІОГРАФІЯ</button></div><div class="post-grid" id="post-grid"></div><div class="empty-state" id="empty-state" hidden><span class="empty-mark"><i data-icon="bookmark"></i></span><h3>Тут поки порожньо</h3><p>Збережи кілька дописів, щоб вони з’явилися тут.</p></div><div class="about-panel" id="about-panel" hidden></div></section>
+      <footer class="main-footer"><span>ІВАН ФРАНКО <b>1856—1916</b></span><span>Створено з повагою до української літератури <span aria-hidden="true">✳</span></span><button id="sources-btn">Джерела та примітки</button></footer>
+    </main>
+
+    <aside class="right-rail" aria-label="Контекст і рекомендації"><div class="rail-header"><span class="tiny-circle">✳</span> КУЛЬТУРНИЙ АРХІВ <span class="rail-rule"></span></div><div class="rail-card"><div class="eyebrow">ОСОБИСТІСТЬ В ЕПОХУ</div><h3>Життя, що стало <em>літературою.</em></h3><p>1856–1916. Письменник, який поєднав слово, науку та боротьбу за майбутнє України.</p><div class="rail-photo"><img class="portrait-image" alt="Архівний портрет Івана Франка" /><span>ІВАН ФРАНКО<br/><small>АРХІВ</small></span></div></div><div class="rail-timeline"><div class="section-head">КЛЮЧОВІ РОКИ <span>↗</span></div><div class="timeline-row"><b>1856</b><span>Народився в Нагуєвичах</span></div><div class="timeline-row"><b>1875</b><span>Вступив до Львівського університету</span></div><div class="timeline-row"><b>1883</b><span>«Захар Беркут»</span></div><div class="timeline-row"><b>1893</b><span>Здобув докторський ступінь</span></div><div class="timeline-row"><b>1905</b><span>Поема «Мойсей»</span></div></div><div class="rail-bottom">Не справжній акаунт Instagram.<br/>Історичні факти + художня подача.</div></aside>
+
+    <nav class="mobile-bottom" aria-label="Мобільна навігація"><button aria-label="Головна" data-action="home"><i data-icon="house"></i></button><button aria-label="Пошук" data-action="search"><i data-icon="search"></i></button><button aria-label="Історії" data-action="reels"><i data-icon="clapperboard"></i></button><button aria-label="Збережене" data-action="saved"><i data-icon="bookmark"></i></button><button aria-label="Профіль" data-action="home"><span class="small-mobile-avatar"><img class="portrait-image" alt="" /></span></button></nav>
+  </div>
+
+  <div id="overlay-root"></div><div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
